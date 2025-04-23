@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!---- Font Icon link----->
+    <script src="https://kit.fontawesome.com/6468c67275.js" crossorigin="anonymous"></script>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <div id="hearder">
+      <div class="container">
+        <nav>
+          <h1><span>J</span>ULES</h1>
+          <ul id="sidemenu">
+            <li><a href="#hearder" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="hearder-text">
+          <p style="font-size: 42px;">Software Engineer</p>
+          <h1>Hello, I'm <br> <span>Jules Wilfried Kemgang</span> <br> <span class="c" style="font-size: 20px;  color: #fff;">I excel at crafting elegant digital experiences and i am proficient in various programming languages like C++, JavaScript, Html, CSS and Python  </span></h1>
+          <a href="#portfolio"> See My Work </a>
+          <div class="ligne">
+            <div class="second"><h1>1</h1><p>Years of<br>experiences</p></div>
+            <div class="second"><h1>16</h1><p>Projects<br>completed</p></div>
+            <div class="second"><h1>8</h1><p>Technologies<br>Mastered</p></div>
+            <div class="second"><h1>100</h1><p>Code<br>consits</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+    
+    
+
+
+    <!-- About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/jwk.2.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>HTML element is everything present from start tag to end tag.
+              The text present between start and end tag is called HTML element content.
+              HTML element is everything present from start tag to end tag.
+              The text present between start and end tag is called HTML element content.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interface</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>Performance Optimization and Tuning</span><br />As a C++ developer, I can optimize your existing codebase by improving performance, enhancing memory management, and fine-tuning algorithms to ensure your software runs efficiently and scales well, even under heavy workloads.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - 2024</span><br />Intership at JetCamer.</li>
+                <li><span>January 2024 - March 2024</span><br />I worked in machine learning for a project called learnCraf as a freelancer, using python and libraries like TensorFlow, Scikit-learn</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023 - Curent</span><br />Computer Science Student at De Anza College
+                </li>
+                <li><span>2022 - 2023</span><br />Graduated High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-----------------------Services------------------------>
+    
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-web-awesome"></i>
+            <h2>Web Design</h2>
+            <p>As a web designer, I can craft aesthetically pleasing and user-friendly websites using tools like Figma, Canva, and Adobe XD, focusing on layout, color schemes, typography, and branding to create a cohesive and visually engaging online presence that aligns with your brand identity and enhances user experience.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class='bx bxl-c-plus-plus'></i>
+            <h2>Performance Optimization and Tuning</h2>
+            <p>As a C++ developer, I can optimize your existing codebase by improving performance, enhancing memory management, and fine-tuning algorithms to ensure your software runs efficiently and scales well, even under heavy workloads.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front Dev</h2>
+            <p>As a front-end developer, I can create visually appealing and responsive websites or applications, ensuring an excellent user experience by utilizing HTML, CSS, JavaScript, and modern frameworks like React, while optimizing performance across various devices and screen sizes.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <!-----------------------Portfolio------------------------>
+    <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="/flip-card.jpg" alt="" />
+              <div class="layer">
+                <h3>A flipper Card</h3>
+                <p>Interactive flipper bank card that allows users to seamlessly flip between their account details and transaction history with a smooth animation.</p>
+                <a href='/flip'><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="/Screenshot 2025-03-23 at 12.09.12 AM.png" alt="" class="resto"/>
+              <div class="layer">
+                <h3>Responsive Restaurant Website</h3>
+                <p>Fully responsive website of a restaurant. An adage says: when the stomach is empty, the head doesn't work.</p>
+                <a href='/resto'><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="https://assets.onecompiler.app/433x7fy7q/43ch4znsy/work-3.png" alt="" />
+              <div class="layer">
+                <h3>Online Profile Card App</h3>
+                <p>The Card Connect you to the talented people around the word.
+                Link all your social Media. And connect you with other people</p>
+                <a href='/card'><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    
+     <!-----------------------Contact------------------------>
+     
+     <div id="contact">
+       <div class="container">
+         <div class="row">
+           <div class="contact-left">
+             <h1 class="sub-title">Contact Me</h1>
+             <p> <i class="fa-solid fa-paper-plane"></i> 2.0william237@gmail.com</p>
+             <p> <i class="fa-solid fa-phone"></i> +1 (408)-806-9027</p>
+             <div class="social-icon">
+               <a href="https://github.com/20will237"><i class="fa-brands fa-github"></i></a>
+               <a href="https://x.com/WKemgang59253"><i class="fa-brands fa-twitter"></i></a>
+               <a href="https://www.linkedin.com/in/jules-kemgang-01313b358"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+             <a href="/JulesKemgang_Resume2025.pdf" class="btn btn2" download >Download Cv</a>
+           </div>
+           <div class="contact-right">
+             <form name="submit-to-google-sheet" onsubmit="submitForm(event)">
+                <input type="text" name="name" id="input1" placeholder="Your Name" required=""/>
+                <input type="email" name="email" id="input2" placeholder="Your Email" required=""/>
+                <textarea name="message" rows = "6" cols="40" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+             </form>
+           </div>
+         </div>
+       </div>
+       <div class="copyright">
+         <p>Copyright @ J W K. made by Jules Wilfried Kemgang</p>
+       </div>
+     </div>
+    
+    <script src="/srcipt.js">
+
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+            
+      function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+      }                 
+
+      var closeMenu = document.querySelector(".fa-solid.fa-circle-xmark");
+      var openMenu = document.querySelector(".fa-solid.fa-bars");
+      var sideMenu = document.getElementById("sidemenu");
+
+      openMenu.addEventListener("click", function() {
+        sideMenu.style.right = "0";
+      });
+
+      closeMenu.addEventListener("click", function() {
+        sideMenu.style.right = "-200px";
+      });
+
+      const msg = document.getElementById("msg");
+
+      function message(){
+        msg.innerHTML = "Message sent successfully";
+      }
+
+      function submitForm(event) {
+        event.preventDefault(); // Prevent default form submission
+        // Implement form submission logic here (e.g., AJAX request to a server or sending email)
+        const msg = document.getElementById("msg");
+        msg.innerHTML = "Message sent successfully";
+      }
+    </script>
+
+  </body>
+</html>
+
+
+
